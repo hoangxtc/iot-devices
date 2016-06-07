@@ -109,6 +109,8 @@
   <ItemGroup>
     <Compile Include="Devices\IMotor.cs" />
     <Compile Include="Devices\Motor.cs" />
+    <Compile Include="Devices\MotorHat.cs" />
+    <Compile Include="Devices\MotorHATException.cs" />
     <Compile Include="Devices\PwmMotor.cs" />
     <Compile Include="Devices\PwmMotorBase.cs" />
     <Compile Include="Devices\Servo.cs" />
@@ -116,6 +118,14 @@
     <EmbeddedResource Include="Properties\Microsoft.IoT.Shields.MotorHat.rd.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Lib\Microsoft.IoT.DeviceCore\Microsoft.IoT.DeviceCore.csproj">
+      <Project>{A4A5D4F4-4E52-4DB6-9FBC-4826554A1944}</Project>
+      <Name>Microsoft.IoT.DeviceCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lib\Microsoft.IoT.DeviceHelpers\Microsoft.IoT.DeviceHelpers.csproj">
+      <Project>{304a00e3-07f1-4148-904b-2512a2d09705}</Project>
+      <Name>Microsoft.IoT.DeviceHelpers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lib\Microsoft.IoT.Devices\Microsoft.IoT.Devices.csproj">
       <Project>{1ed1007a-7708-4721-b16b-4283a66a4290}</Project>
       <Name>Microsoft.IoT.Devices</Name>
